@@ -1,5 +1,5 @@
 <h1 align="center">
-  iWeather
+  Climo
 </h1>
 
 <blockquote align="center">Módulo Final: Projeto Integrador</blockquote>

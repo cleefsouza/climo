@@ -1,1 +1,0 @@
-// Arquivo javascript principal

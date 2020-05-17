@@ -27,7 +27,7 @@ body {
 
 .header {
     height: 31.25em;
-    background: url('../img/background.png');
+    background: url('../img/background.svg');
     background-repeat: no-repeat;
     background-size: cover;
 }

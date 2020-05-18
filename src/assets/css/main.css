@@ -1,0 +1,16 @@
+:root {
+
+  /* Colors */
+
+  --purple: #7159c1;
+  --white: #fff;
+  --gray: #a4a4a4;
+  --lighten-grey: #fafafa;
+  --black: #000;
+  --lighten-black: #333;
+
+  /* Font-weight */
+
+  --medium: 500;
+  --bold: 700;
+}

@@ -1,1 +1,3 @@
-node_modules
+#development dependencies
+
+/node_modules

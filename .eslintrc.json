@@ -4,7 +4,7 @@
         "node": true
     },
     "extends": [
-        "eslint:recommended",
+        "eslint:recommend",
         "plugin:prettier/recommended"
     ],
     "globals": {
@@ -12,10 +12,9 @@
         "SharedArrayBuffer": "readonly"
     },
     "parserOptions": {
-        "ecmaVersion": 2018,
+        "ecmaVersion": 11,
         "sourceType": "module"
     },
     "rules": {
-        "prettier/prettier": "error"
     }
 }

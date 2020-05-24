@@ -2,11 +2,141 @@
 
   /* Colors */
 
+  --pink: #ffd0d0;
   --purple: #7159c1;
   --lighten-purple: #8d7acd;
   --black: #000;
+  --white: #fff;
   --grey: #fafafa;
   --darken-grey: #333;
   --lighten-grey: #737373;
-  --white: #fff;
+}
+
+.header {
+  z-index: 1;
+  display: none;
+  justify-content: center;
+  align-items: center;
+  background: var(--grey);
+  padding: 32px 16px;
+}
+
+.header span {
+  color: var(--purple);
+}
+
+.main {
+  display: flex;
+  flex-direction: column;
+}
+
+.main section {
+  position: relative;
+  padding: 0 32px !important;
+}
+
+.cl-hero {
+  height: 40vh;
+  min-height: 280px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background: var(--pink);
+}
+
+.cl-hero h1 {
+  font-size: 2.3em;
+  font-weight: 700;
+  line-height: 1.25em;
+  margin-bottom: 24px;
+}
+
+.cl-hero button {
+  display: none;
+  position: absolute;
+  left: 50%;
+  bottom: 12px;
+  transform: translateX(-50%);
+  background: none;
+}
+
+.cl-hero button img {
+  width: 38px;
+  height: 38px;
+}
+
+.hero-form-group {
+  position: relative;
+  height: auto;
+  width: 100%;
+  max-width: 446.66px;
+}
+
+.hero-form-group form {
+  height: auto;
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: center;
+}
+
+.hero-form-group input {
+  height: 58px;
+  width: 100%;
+  padding: 16px !important;
+  font-size: 1.3em;
+  border: 1.4px solid var(--black);
+  border-radius: 6px !important;
+}
+
+.hero-form-group label {
+  position: absolute;
+  top: 18px;
+  right: 10px;
+  width: 28px;
+  background: var(--white);
+}
+
+.hero-form-group::before {
+  content: "";
+  position: absolute;
+  right: 30px;
+  width: 8px;
+  height: 100%;
+  box-shadow: -3px 0 14px 0 var(--white);
+}
+
+@media (min-width: 728px) {
+
+  .header {
+    display: flex;
+  }
+
+  .cl-hero {
+    height: 80vh;
+    display: flex;
+    align-items: center;
+    background: url("../images/hero-background.png") no-repeat center center / cover;
+  }
+
+  .cl-hero h1 {
+    position: relative;
+    top: -72px;
+    font-size: 3.5em;
+    color: var(--white);
+  }
+
+  .cl-hero span {
+    color: var(--black);
+  }
+
+  .cl-hero button {
+    display: inline-block;
+  }
+}
+
+@media (max-width: 414px) {
+
+  body {
+    font-size: 12px;
+  }
 }

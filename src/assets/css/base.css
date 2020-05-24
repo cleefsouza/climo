@@ -21,7 +21,6 @@
 #root,
 html,
 body {
-  height: 100%;
   touch-action: auto;
   overflow: visible;
   overscroll-behavior: auto;

@@ -1,12 +1,232 @@
 :root {
-
-  /* Colors */
-
   --purple: #7159c1;
   --lighten-purple: #8d7acd;
   --black: #000;
-  --grey: #fafafa;
-  --darken-grey: #333;
+  --grey: #f3f3f3;
   --lighten-grey: #737373;
   --white: #fff;
+}
+
+#root {
+  background: var(--grey);
+}
+
+.header {
+  width: 100%;
+  height: 64px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 32px 16px;
+  background: var(--white);
+  box-shadow: 0 2px 6px rgba(115, 115, 115, 0.25);
+}
+
+.header a {
+  display: flex;
+  align-items: center;
+  color: var(--purple);
+}
+
+.header a span {
+  display: none;
+  margin-left: 12px;
+}
+
+.header a i {
+  padding: 3px;
+  background: rgba(196, 196, 196, 0.15);
+  border-radius: 6px;
+}
+
+.logo {
+  color: var(--purple) !important;
+  font-size: 1.8em;
+}
+
+.main {
+  min-height: calc(100vh - 64px);
+  padding: 68px 0;
+}
+
+.main section {
+  position: relative;
+  padding: 0 32px !important;
+}
+
+.cl-city {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 16vh;
+}
+
+.city-info {
+  display: flex;
+  flex-direction: column;
+}
+
+span.city-name {
+  color: var(--darken-grey);
+  font-size: 3em;
+  font-weight: 700;
+  line-height: 1.25em;
+  margin-bottom: 12px;
+  white-space: nowrap;
+}
+
+span.city-date {
+  color: var(--lighten-grey);
+  line-height: 1.25em;
+}
+
+.city-verification {
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  color: var(--purple);
+}
+
+.cl-panel,
+.city-verification span,
+.condition-description span,
+.condition-description h2 {
+  display: none;
+}
+
+.cl-condition div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.condition-temp {
+  margin-bottom: 1.36em;
+}
+
+.condition-temp i {
+  font-size: 3em;
+  color: var(--purple);
+  margin-bottom: 16px;
+}
+
+.condition-temp h1 {
+  font-size: 3.875em !important;
+}
+
+.condition-description small {
+  color: var(--lighten-grey);
+  font-size: 1.2em;
+}
+
+.cl-day-week {
+  margin-top: 14vh;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.cl-day-week div {
+  display: flex;
+  flex-direction: column !important;
+  font-size: 1.3em;
+}
+
+.day-week span {
+  font-weight: 500;
+  margin-bottom: 12px;
+}
+
+.day-week small {
+  font-size: 1em !important;
+}
+
+@media (min-width: 768px) {
+
+  .header a span {
+    display: inline-flex;
+  }
+
+  .main {
+    width: 80%;
+    margin: 0 auto;
+  }
+
+  .city-info {
+    width: 30vw;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    margin-right: 54px;
+  }
+
+  .city-info span {
+    font-size: 1.3em !important;
+    margin-bottom: 0;
+  }
+
+  .city-verification span {
+    display: inline-flex;
+    margin-left: 16px;
+  }
+
+  .cl-condition {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .cl-condition div {
+    align-items: flex-start;
+  }
+
+  .condition-temp i {
+    display: none;
+  }
+
+  .condition-description span,
+  .condition-description h2 {
+    display: inline-flex;
+  }
+
+  .condition-description h2 {
+    position: relative;
+    left: -8px;
+    margin: 8px 0;
+    font-size: 3.25em;
+  }
+}
+
+@media (min-width: 1288px) {
+
+  .main {
+    width: calc(100% - 36.8vw);
+    margin: 0;
+  }
+
+  .main section {
+    width: 86%;
+    margin: 0 auto;
+    padding: 0;
+  }
+
+  .main section + section {
+    margin-top: 22vh;
+  }
+
+  .cl-panel {
+    display: block;
+    position: fixed;
+    right: 0 !important;
+    min-height: 100vh;
+    min-width: 36.8vw;
+    background: url("../images/sunset-day.jpg") no-repeat center center / cover;
+  }
+}
+
+@media (max-width: 414px) {
+
+  body {
+    font-size: 12px;
+  }
 }

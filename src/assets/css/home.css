@@ -3,19 +3,17 @@
   /* Colors */
 
   --pink: #ffd0d0;
-  --purple: #7159c1;
+  --purple: #74717e;
   --lighten-purple: #8d7acd;
   --black: #000;
   --white: #fff;
-  --grey: #f3f3f3;
+  --grey: #fafafa;
   --darken-grey: #333;
   --lighten-grey: #737373;
 }
 
 .header {
   z-index: 1;
-  width: 100%;
-  height: 64px;
   display: none;
   justify-content: center;
   align-items: center;
@@ -62,8 +60,9 @@
   background: none;
 }
 
-.cl-hero button i {
-  font-size: 2.6em;
+.cl-hero button img {
+  width: 38px;
+  height: 38px;
 }
 
 .hero-form-group {
@@ -106,6 +105,84 @@
   box-shadow: -3px 0 14px 0 var(--white);
 }
 
+
+.title-card {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 80px ;
+  
+}
+.card {
+width: 200px;
+}
+
+/* .card-header{
+deco:;
+} */
+.cl-climate-card {
+display:flex;
+justify-content: space-around;
+margin-bottom: 100px;
+}
+
+.info-card {
+display: flex;
+}
+
+.conteudo-card small {
+color: #8d7acd;
+}
+
+.conteudo-card strong{
+font-size: 15px;
+}
+.card-temp{
+font-size: 25px;
+}
+.icon-card {
+width: 55px;
+}
+hr{
+background-color: #8d7acd;
+width: 55px;
+padding: 1px;
+}
+.hr1{
+margin-left: 47%;
+margin-top: 100px;
+}
+.hr2{
+margin-left: 8%;
+}
+.hr3{
+margin-left: 8%;
+}
+.project-info h3{
+margin-bottom: 45px;
+}
+
+.project-info p{
+margin-bottom: 100px;
+}
+
+.cl-project-content{
+display: flex;
+justify-content: space-around;
+}
+
+.cl-team-content{
+display: flex;
+justify-content: space-around;
+margin-right: 25%;
+}
+
+.footer{
+background-color: #8d7acd;
+color: #fafafa;
+display: flex;
+justify-content: center;
+}
+
 @media (min-width: 728px) {
 
   .header {
@@ -139,5 +216,14 @@
 
   body {
     font-size: 12px;
+  }
+  .project-hero-image{
+    display: none;
+  }
+  .time-image{
+    display: none;
+  }
+  .cl-team-content{
+    display: block;
   }
 }

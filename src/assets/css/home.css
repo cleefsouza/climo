@@ -7,13 +7,15 @@
   --lighten-purple: #8d7acd;
   --black: #000;
   --white: #fff;
-  --grey: #fafafa;
+  --grey: #f3f3f3;
   --darken-grey: #333;
   --lighten-grey: #737373;
 }
 
 .header {
   z-index: 1;
+  width: 100%;
+  height: 64px;
   display: none;
   justify-content: center;
   align-items: center;
@@ -60,9 +62,8 @@
   background: none;
 }
 
-.cl-hero button img {
-  width: 38px;
-  height: 38px;
+.cl-hero button i {
+  font-size: 2.6em;
 }
 
 .hero-form-group {

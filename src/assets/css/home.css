@@ -1,9 +1,6 @@
 :root {
-
-  /* Colors */
-
   --pink: #ffd0d0;
-  --purple: #74717e;
+  --purple: #7159c1;
   --lighten-purple: #8d7acd;
   --black: #000;
   --white: #fff;
@@ -12,16 +9,16 @@
   --lighten-grey: #737373;
 }
 
-.header {
+.aside {
   z-index: 1;
   display: none;
   justify-content: center;
   align-items: center;
   background: var(--grey);
-  padding: 32px 16px;
+  height: 64px;
 }
 
-.header span {
+.aside span {
   color: var(--purple);
 }
 
@@ -42,6 +39,7 @@
   flex-direction: column;
   justify-content: center;
   background: var(--pink);
+  border-bottom-left-radius: 30px;
 }
 
 .cl-hero h1 {
@@ -49,20 +47,6 @@
   font-weight: 700;
   line-height: 1.25em;
   margin-bottom: 24px;
-}
-
-.cl-hero button {
-  display: none;
-  position: absolute;
-  left: 50%;
-  bottom: 12px;
-  transform: translateX(-50%);
-  background: none;
-}
-
-.cl-hero button img {
-  width: 38px;
-  height: 38px;
 }
 
 .hero-form-group {
@@ -105,95 +89,197 @@
   box-shadow: -3px 0 14px 0 var(--white);
 }
 
+.cl-hero button {
+  display: none;
+  position: absolute;
+  left: 50%;
+  bottom: 12px;
+  transform: translateX(-50%);
+  background: none;
+}
+
+.cl-hero button i {
+  font-size: 2.3em;
+}
 
 .title-card {
-  display: flex;
-  justify-content: center;
-  margin-bottom: 80px ;
-  
-}
-.card {
-width: 200px;
+  margin: 42px 0;
+  padding: 0 32px !important;
+  text-align: right;
 }
 
-/* .card-header{
-deco:;
-} */
+.title-card h2 {
+  margin-top: 12px;
+  font-size: 1.88em;
+  line-height: 1.25em;
+}
+
+.title-card::before {
+  content: "";
+  display: inline-flex;
+  position: relative;
+  height: 4px;
+  width: 30%;
+  background: var(--purple);
+}
+
 .cl-climate-card {
-display:flex;
-justify-content: space-around;
-margin-bottom: 100px;
+  display: grid;
+  gap: 52px 0;
+  margin-top: 36.68px;
+  margin-bottom: 12vh;
 }
 
-.info-card {
-display: flex;
+.card-info {
+  height: 216px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 18px;
+  border: 1.6px solid rgba(167, 167, 167, 0.5);
+  border-radius: 6px;
 }
 
-.conteudo-card small {
-color: #8d7acd;
+.card-info > div {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
-.conteudo-card strong{
-font-size: 15px;
-}
-.card-temp{
-font-size: 25px;
-}
-.icon-card {
-width: 55px;
-}
-hr{
-background-color: #8d7acd;
-width: 55px;
-padding: 1px;
-}
-.hr1{
-margin-left: 47%;
-margin-top: 100px;
-}
-.hr2{
-margin-left: 8%;
-}
-.hr3{
-margin-left: 8%;
-}
-.project-info h3{
-margin-bottom: 45px;
+.detail-info {
+  display: flex;
+  flex-direction: column;
 }
 
-.project-info p{
-margin-bottom: 100px;
+.detail-info strong,
+.detail-info span {
+  text-overflow: ellipsis;
 }
 
-.cl-project-content{
-display: flex;
-justify-content: space-around;
+.detail-info strong {
+  font-size: 1.6em;
+  line-height: 1.45em;
 }
 
-.cl-team-content{
-display: flex;
-justify-content: space-around;
-margin-right: 25%;
+.detail-info span {
+  font-size: 1.2em;
+  color: var(--darken-grey);
+  line-height: 1.36em;
 }
 
-.footer{
-background-color: #8d7acd;
-color: #fafafa;
-display: flex;
-justify-content: center;
+.detail-info small {
+  font-size: 1em;
+  color: var(--purple);
+}
+
+.climate-icon {
+  display: none;
+}
+
+.climate-temp strong {
+  font-size: 2em;
+  font-weight: 700;
+  letter-spacing: 0.6px;
+}
+
+.cl-project-content,
+.cl-team-content {
+  margin-bottom: 118px;
+}
+
+.project-info::before,
+.team-info::before {
+  content: "";
+  position: absolute;
+  height: 4px;
+  width: 4.6%;
+  min-width: 86px;
+  display: inline-flex;
+  background: var(--purple);
+}
+
+.project-info h3,
+.team-info h3 {
+  font-size: 1.78em;
+  padding: 18px 0;
+}
+
+.project-info p,
+.project-info span {
+  font-size: 1.3em;
+  line-height: 1.66em;
+  margin-bottom: 32px;
+}
+
+.project-info a {
+  display: flex;
+  align-items: center;
+  color: var(--purple);
+  margin-top: 18.86px;
+  font-size: 1.1em;
+}
+
+.project-info a i {
+  margin-left: 5.6px !important;
+}
+
+.project-hero-image,
+.time-hero-image {
+  display: none;
+}
+
+.time-hero-image img {
+  position: relative;
+  left: -96px !important;
+}
+
+.slider {
+  display: flex;
+  overflow: hidden;
+  margin-top: 32.4px;
+}
+
+.card-contributor {
+  min-width: 184px;
+  width: 33%;
+  height: 208px;
+  margin-right: 12px;
+  border-radius: 6px;
+  border: 1.6px solid rgba(167, 167, 167, 0.5);
+}
+
+.contributor-detail,
+.contributor-github {
+  display: none;
+}
+
+.footer {
+  height: 80px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  padding: 8px 32px;
+  font-size: 1.3em;
+  color: var(--white);
+  background-color: var(--purple);
 }
 
 @media (min-width: 728px) {
 
-  .header {
+  .aside {
     display: flex;
   }
 
   .cl-hero {
-    height: 80vh;
+    height: 78vh;
     display: flex;
     align-items: center;
     background: url("../images/hero-background.png") no-repeat center center / cover;
+    border-radius: 0;
   }
 
   .cl-hero h1 {
@@ -210,20 +296,87 @@ justify-content: center;
   .cl-hero button {
     display: inline-block;
   }
+
+  .title-card {
+    text-align: center;
+  }
+
+  .title-card::before {
+    width: 4.6%;
+    right: 0;
+  }
+
+  .cl-climate-card {
+    grid-template-columns: 1fr 1fr;
+    gap: 18px;
+  }
+
+  .card-info {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 24px 16px;
+  }
+
+  .card-info > div {
+    align-items: flex-start;
+    justify-content: space-between;
+  }
+
+  .card-info div + div {
+    margin-top: 18.86px;
+  }
+
+  .climate-info {
+    flex-direction: row !important;
+    align-items: center;
+  }
+
+  .climate-icon {
+    display: flex;
+  }
+
+  .climate-icon i {
+    position: relative;
+    top: -18px;
+    font-size: 2.75em;
+    color: var(--purple);
+  }
+}
+
+@media (min-width: 1128px) {
+
+  .cl-climate-card {
+    grid-template-columns: repeat(4, 1fr);
+  }
+
+  .cl-project-content,
+  .cl-team-content {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .cl-project-content > div,
+  .cl-team-content > div {
+    width: 49%;
+  }
+
+  .project-hero-image,
+  .time-hero-image {
+    display: block;
+  }
+}
+
+@media (min-width: 1326px) {
+
+  .main section ~ section {
+    width: 75%;
+    margin: 0 auto 164px auto;
+  }
 }
 
 @media (max-width: 414px) {
 
   body {
     font-size: 12px;
-  }
-  .project-hero-image{
-    display: none;
-  }
-  .time-image{
-    display: none;
-  }
-  .cl-team-content{
-    display: block;
   }
 }

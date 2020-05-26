@@ -199,6 +199,10 @@ span.city-date {
 
 @media (min-width: 1288px) {
 
+  body {
+    overflow-y: hidden;
+  }
+
   .main {
     width: calc(100% - 36.8vw);
     margin: 0;

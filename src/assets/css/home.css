@@ -251,9 +251,42 @@
   border: 1.6px solid rgba(167, 167, 167, 0.5);
 }
 
+.info-contributor {
+  position: relative;
+  height: 100%;
+  padding: 12px 8.8px;
+}
+
+.contributor-avatar {
+  width: 68px;
+  height: 68px;
+  border-radius: 50%;
+  background: rgba(167, 167, 167, 0.5);
+}
+
 .contributor-detail,
 .contributor-github {
-  display: none;
+  display: flex;
+  flex-direction: column;
+  padding: 18px 12px 12px 0;
+}
+
+.contributor-detail span,
+.contributor-detail small {
+  line-height: 1.25em;
+  margin-bottom: 6px;
+}
+
+.contributor-detail span {
+  font-weight: 500;
+}
+
+.contributor-detail small {
+  color: var(--lighten-grey);
+}
+
+.contributor-github a {
+  color: var(--purple);
 }
 
 .footer {

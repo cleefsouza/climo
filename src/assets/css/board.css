@@ -39,9 +39,9 @@
   border-radius: 6px;
 }
 
-.logo {
-  color: var(--purple) !important;
-  font-size: 1.8em;
+.logo img {
+  width: 110px;
+  height: auto;
 }
 
 .main {

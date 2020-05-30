@@ -25,11 +25,12 @@
           <h1>Antecipe-se com a <span>Climo</span></h1>
 
           <div class="hero-form-group hero-fixed-menu">
-            <form id="form-search">
+            <form id="form-search" action="./src/pages/board.html" method="get">
               <input
                 id="search"
                 name="search"
                 autocomplete="off"
+                required
                 placeholder="Em qual cidade você mora?"
               />
               <label for="search">
@@ -224,6 +225,5 @@
       crossorigin="anonymous"
     ></script>
     <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
-    <script src="./index.js"></script>
   </body>
 </html>

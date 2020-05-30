@@ -1,4 +1,4 @@
-const key = '74c640af';
+const key = 'AAD_SUA_KEY';
 const format = 'json-cors';
 const urlBase = 'https://api.hgbrasil.com/weather?';
 const fields =
@@ -60,10 +60,10 @@ function setToday(json) {
   $('#description').text(json.description);
 }
 
-function renderElementsWeekdays(items) {
+function renderElementsWeekdays(json) {
   let sectionDayWeek = document.querySelector('.cl-day-week');
 
-  items.forEach(item => {
+  json.forEach(item => {
     sectionDayWeek.appendChild(createElement(item.weekday, item.max));
   });
 }

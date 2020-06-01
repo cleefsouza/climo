@@ -56,19 +56,21 @@
   max-width: 446.66px;
 }
 
-.hero-form-group form {
+.hero-form-group form,
+.hero-form-group-fixed form {
   height: auto;
   display: flex;
   flex-direction: row-reverse;
   align-items: center;
 }
 
-.hero-form-group input {
+.hero-form-group input,
+.hero-form-group-fixed input {
   height: 58px;
   width: 100%;
   padding: 16px !important;
   font-size: 1.3em;
-  border: 1.4px solid var(--black);
+  border: 1.6px solid var(--black);
   border-radius: 6px !important;
 }
 
@@ -89,6 +91,38 @@
   box-shadow: -3px 0 14px 0 var(--white);
 }
 
+.hero-form-group-fixed {
+  z-index: 1;
+  position: fixed;
+  top: 0;
+  height: 74px;
+  width: 100%;
+  padding: 8px 32px;
+  display: none;
+  justify-content: center;
+  align-items: center;
+  background: var(--white);
+  box-shadow: 0 2px 60px rgba(167, 167, 167, 0.2);
+  animation: fixedHero 0.66s;
+}
+
+.hero-form-group-fixed span,
+.hero-form-group-fixed span img {
+  display: none;
+  width: 100px;
+  height: auto;
+}
+
+.hero-form-group-fixed input {
+  background: rgba(167, 167, 167, 0.2);
+  border: 0;
+  height: 48px;
+}
+
+.show {
+  display: flex;
+}
+
 .cl-hero button {
   display: none;
   position: absolute;
@@ -103,7 +137,7 @@
 }
 
 .title-card {
-  margin: 42px 0;
+  margin: 78px 0 64px 0;
   padding: 0 32px !important;
   text-align: right;
 }
@@ -175,10 +209,6 @@
   color: var(--purple);
 }
 
-.climate-icon {
-  display: none;
-}
-
 .climate-temp strong {
   font-size: 2em;
   font-weight: 700;
@@ -226,6 +256,7 @@
   margin-left: 5.6px !important;
 }
 
+.climate-icon,
 .project-hero-image,
 .time-hero-image {
   display: none;
@@ -374,6 +405,15 @@
     font-size: 2.75em;
     color: var(--purple);
   }
+
+  .hero-form-group-fixed {
+    justify-content: space-between;
+  }
+
+  .hero-form-group-fixed span,
+  .hero-form-group-fixed span img {
+    display: flex;
+  }
 }
 
 @media (min-width: 1128px) {
@@ -411,5 +451,16 @@
 
   body {
     font-size: 12px;
+  }
+}
+
+@keyframes fixedHero {
+
+  0% {
+    transform: translateY(-83px);
+  }
+
+  100% {
+    transform: translateY(0);
   }
 }

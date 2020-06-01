@@ -4,8 +4,8 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Board | Climo</title>
-    <link rel="stylesheet" href="../assets/css/base.css" />
-    <link rel="stylesheet" href="../assets/css/board.css" />
+    <link rel="stylesheet" href="./src/assets/css/base.css" />
+    <link rel="stylesheet" href="./src/assets/css/board.css" />
     <link
       href="https://fonts.googleapis.com/icon?family=Material+Icons"
       rel="stylesheet"
@@ -14,12 +14,12 @@
   <body>
     <div id="root">
       <header class="header">
-        <a href="../../index.html">
+        <a href="index.html">
           <i class="material-icons">keyboard_arrow_left</i>
           <span>Voltar para página inicial</span>
         </a>
         <strong class="logo">
-          <img src="../assets/images/logo-climo.png" alt="Climo" />
+          <img src="src/assets/images/logo-climo.png" alt="Climo" />
         </strong>
       </header>
 
@@ -27,10 +27,7 @@
 
       <main class="main">
         <section class="cl-city">
-          <div class="city-info">
-            <span class="city-name">-</span>
-            <span class="city-date">-</span>
-          </div>
+          <div class="city-info"></div>
 
           <div class="city-verification">
             <i class="material-icons">schedule</i>
@@ -39,28 +36,14 @@
         </section>
 
         <section class="cl-condition">
-          <div class="condition-temp">
-            <i class="material-icons">wb_sunny</i>
-            <h1 id="temp">-</h1>
-          </div>
+          <div class="condition-temp"></div>
 
-          <div class="condition-description">
-            <span id="hour">-</span>
-            <h2 id="today">-</h2>
-            <small id="description">-</small>
-          </div>
+          <div class="condition-description"></div>
         </section>
 
         <section class="cl-day-week"></section>
       </main>
     </div>
-
-    <script
-      src="https://code.jquery.com/jquery-3.5.1.min.js"
-      integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0="
-      crossorigin="anonymous"
-    ></script>
-    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
-    <script defer src="../../index.js"></script>
+    <script type="module" src="board.js"></script>
   </body>
 </html>

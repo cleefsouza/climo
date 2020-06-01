@@ -62,6 +62,7 @@
 }
 
 .city-info {
+  overflow: hidden;
   display: flex;
   flex-direction: column;
 }
@@ -72,11 +73,12 @@ span.city-name {
   font-weight: 700;
   line-height: 1.25em;
   margin-bottom: 12px;
-  white-space: nowrap;
+  text-overflow: ellipsis;
 }
 
 span.city-date {
   color: var(--lighten-grey);
+  font-size: 1.3em;
   line-height: 1.25em;
 }
 
@@ -224,7 +226,7 @@ span.city-date {
     right: 0 !important;
     min-height: 100vh;
     min-width: 36.8vw;
-    background: url("../images/sunset-day.jpg") no-repeat center center / cover;
+    background: url("../images/spring-day.jpg") no-repeat center center / cover;
   }
 }
 

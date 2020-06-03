@@ -1,4 +1,3 @@
-/* eslint-disable no-undef */
 import HTMLElements from './src/utils/nodeElements.js';
 import ObjectDay from './src/utils/dateManagement.js';
 import { fixedOnScroll } from './src/animation.js';
@@ -22,7 +21,9 @@ function contentLoadAPI() {
         localStorage.setItem('city', nodeInputValue);
 
         !city || city == null
-          ? alert('Não foi possível realizar sua pesquisa. Tente novamente')
+          ? console.warn(
+              'Não foi possível realizar sua pesquisa. Tente novamente'
+            )
           : dataStorage;
       }
     });

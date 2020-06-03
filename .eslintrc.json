@@ -4,7 +4,7 @@
         "node": true
     },
     "extends": [
-        "eslint:recommend",
+        "eslint:recommended",
         "plugin:prettier/recommended"
     ],
     "globals": {
@@ -15,10 +15,9 @@
         "ecmaVersion": 11,
         "sourceType": "module"
     },
-    "plugins": [
-        "prettier"
-    ],
     "rules": {
-        "prettier/prettier": "error"
+        "prettier/prettier": ["error", {
+            "endOfLine": "auto"
+        }]
     }
 }

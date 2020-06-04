@@ -1,6 +1,6 @@
 /* eslint-disable no-undef */
 const baseRules = {
-  key: 'de41d740',
+  key: 'dcda415d',
   format: 'json-cors',
   uri: 'https://api.hgbrasil.com/weather?',
   fields:

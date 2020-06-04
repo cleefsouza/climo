@@ -9,6 +9,11 @@
   --lighten-grey: #737373;
 }
 
+::-webkit-scrollbar{
+  width: 0;
+  background: transparent;
+}
+
 .aside {
   z-index: 1;
   display: none;
@@ -272,24 +277,12 @@
   left: -96px !important;
 }
 
-.slider-button {
-  cursor: pointer;
-  z-index: 1;
-  position: absolute;
-  top: 53.8%;
-  right: 12px;
-  width: 32px;
-  height: 32px;
-  background: var(--purple);
-  box-shadow: 1px 1px 60px rgba(0, 0, 0, 0.3);
-  border-radius: 6px;
-  color: var(--white);
-}
-
 .contributors {
+  cursor: grab;
   display: flex;
   align-items: center;
   margin-top: 32.4px;
+  overflow-x: auto;
 }
 
 .card-contributor {

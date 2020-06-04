@@ -1,6 +1,7 @@
+/* eslint-disable no-undef */
 import HTMLElements from './src/utils/nodeElements.js';
 import ObjectDay from './src/utils/dateManagement.js';
-import { fixedOnScroll } from './src/animation.js';
+import { animatedEffects } from './src/animation.js';
 import {
   baseRules,
   dataStorage,
@@ -59,7 +60,7 @@ function contentLoadAPI() {
     cardsectionContent.innerHTML += cardTemplate;
   });
 
-  fixedOnScroll();
+  animatedEffects();
 }
 
 window.addEventListener('load', contentLoadAPI());

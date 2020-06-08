@@ -16,7 +16,7 @@ Projeto integrador desenvolvido durante o curso **Frontend Coding From Facebook*
 
 Climo é um aplicativo web para consultar a previsão do tempo de sua cidade. Utilizando a API pública [HG Weather](https://hgbrasil.com/status/weather) exibimos as condições atuais do tempo em todo território nascional.
 
-> **Link:** https://climated-app.now.sh
+> **Link:** [climo.now.sh](https://climo.now.sh)
 
 ## Requisitos
 - Npm

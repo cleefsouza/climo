@@ -1,6 +1,6 @@
 /* eslint-disable no-undef */
 const baseRules = {
-  key: '307ea049', // HG_KEY Genérica
+  key: '8fb4981a', // HG_KEY Genérica
   format: 'json-cors',
   uri: 'https://api.hgbrasil.com/weather?',
   fields:

@@ -76,4 +76,4 @@ Climo é um aplicativo web para consultar a previsão do tempo de sua cidade. Ut
 
 ## Meta
 
-Made with 💚    by **Group Six**
+Made with 💚 by **Group Six**
